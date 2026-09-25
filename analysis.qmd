@@ -2,5 +2,18 @@
 title: "Mallard Duck Movement"
 author: "Nicholas Tison"
 format: html
+execute:
+  echo: false
 ---
+
+```{r}
+#| message: false
+library(tidyverse)
+library(sf)
+```
+
+```{r}
+#| cache: true
+mallards <- readRDS("data/mallards.rds")
+```
 

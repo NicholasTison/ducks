@@ -1,0 +1,30 @@
+---
+title: "Mallard Duck Movement"
+author: "Nicholas Tison"
+format: html
+execute:
+  echo: false
+---
+
+```{r}
+#| message: false
+library(tidyverse)
+library(sf)
+library(rnaturalearth)
+```
+
+```{r}
+#| cache: true
+mallards <- readRDS("data/mallards.rds")
+```
+
+```{r}
+world <- ne_countries(scale = "medium", returnclass = "sf")
+
+mallards |>
+  filter(lat >= 46, lat <= 55, long >= 7, long <= 25) |>
+  ggplot() +
+  geom_sf(data = world) +
+  geom_point(aes(x = long, y = lat, color = duck_id)) +
+  coord_sf(xlim = c(7, 25), ylim = c(46, 55))
+```
