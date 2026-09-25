@@ -17,3 +17,14 @@ library(sf)
 mallards <- readRDS("data/mallards.rds")
 ```
 
+Mallard ducks (*Anas platyrhynchos*) are one of the most widespread and recognizable dabbling duck species in the world. Native to temperate and subtropical regions across North America and Eurasia, mallards exhibit remarkable ecological plasticity and diverse migratory behaviors, ranging from sedentary resident populations to long-distance migrants.
+
+This study focuses on Lake Constance (*Bodensee*), a large freshwater lake situated along the borders of Germany, Switzerland, and Austria. Fed by the Rhine River, this basin serves as an essential staging, foraging, and wintering refuge for hundreds of thousands of waterfowl traveling across Central Europe.
+
+Using high-resolution GPS telemetry, this dataset records tens of thousands of positional fixes from tagged individual mallards over time. The tracking data reveals fine-scale movement dynamics across the annual cycle, highlighting how ducks navigate between local foraging areas and longer regional flights as seasonal conditions shift.
+
+<div style="display: flex; justify-content: center;">
+  <img src="images/mallard.jpg" style="height: 300px; width: auto;"/>
+</div>
+
+
