@@ -1,0 +1,44 @@
+---
+title: "Mallard Duck Movement"
+author: "Nicholas Tison"
+format: html
+execute:
+  echo: false
+---
+
+```{r}
+#| message: false
+library(tidyverse)
+library(sf)
+library(ggridges)
+```
+
+```{r}
+#| cache: true
+mallards <- readRDS("data/mallards.rds")
+```
+
+```{r}
+mallards |>
+  count(month)
+```
+
+```{r}
+summary(mallards$speed)
+```
+
+```{r}
+#| message: false
+mallards |>
+  filter(speed <= 30) |>
+  group_by(season, month) |>
+  summarize(mean_speed = mean(speed, na.rm = TRUE), .groups = "drop")
+```
+
+```{r}
+#| message: false
+mallards |>
+  filter(speed <= 30) |>
+  ggplot(aes(x = speed, y = month)) +
+  geom_density_ridges()
+```
