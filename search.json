@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "seasons.html",
+    "href": "seasons.html",
+    "title": "Mallard Duck Movement",
+    "section": "",
+    "text": "# A tibble: 12 × 2\n   month     n\n   &lt;ord&gt; &lt;int&gt;\n 1 Jan    3266\n 2 Feb    4960\n 3 Mar    7524\n 4 Apr    6369\n 5 May    3423\n 6 Jun    2842\n 7 Jul    5748\n 8 Aug    9659\n 9 Sep   20977\n10 Oct    9890\n11 Nov    4825\n12 Dec    3796\n\n\n\n\n    Min.  1st Qu.   Median     Mean  3rd Qu.     Max.      NAs \n  0.0000   0.1000   0.2200   0.4156   0.4400 127.4500     2312 \n\n\n\n\n# A tibble: 12 × 3\n   season month mean_speed\n   &lt;fct&gt;  &lt;ord&gt;      &lt;dbl&gt;\n 1 Spring Mar        0.372\n 2 Spring Apr        0.360\n 3 Spring May        0.335\n 4 Summer Jun        0.307\n 5 Summer Jul        0.481\n 6 Summer Aug        0.474\n 7 Autumn Sep        0.438\n 8 Autumn Oct        0.400\n 9 Autumn Nov        0.338\n10 Winter Jan        0.329\n11 Winter Feb        0.358\n12 Winter Dec        0.327"
+  },
+  {
+    "objectID": "analysis.html",
+    "href": "analysis.html",
+    "title": "Mallard Duck Movement",
+    "section": "",
+    "text": "Mallard ducks (Anas platyrhynchos) are one of the most widespread and recognizable dabbling duck species in the world. Native to temperate and subtropical regions across North America and Eurasia, mallards exhibit remarkable ecological plasticity and diverse migratory behaviors, ranging from sedentary resident populations to long-distance migrants.\nThis study focuses on Lake Constance (Bodensee), a large freshwater lake situated along the borders of Germany, Switzerland, and Austria. Fed by the Rhine River, this basin serves as an essential staging, foraging, and wintering refuge for hundreds of thousands of waterfowl traveling across Central Europe.\nUsing high-resolution GPS telemetry, this dataset records tens of thousands of positional fixes from tagged individual mallards over time. The tracking data reveals fine-scale movement dynamics across the annual cycle, highlighting how ducks navigate between local foraging areas and longer regional flights as seasonal conditions shift."
+  }
+]
